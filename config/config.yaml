@@ -1,0 +1,29 @@
+# RAG Application Configuration
+
+# LLM Configuration
+llm:
+  type: "openai"  # Options: openai
+  model_name: "gpt-4o-mini"
+  temperature: 0.7
+  max_tokens: 500
+
+# Embedding Model Configuration
+embedding:
+  type: "openai"  # Options: openai
+  model_name: "text-embedding-3-small"
+
+# Vector Store Configuration
+vectorstore:
+  type: "chroma"  # Options: chroma
+  persist_directory: "./indexes/chroma_db"
+  collection_name: "rag_documents"
+
+# Document Processing Configuration
+document_processing:
+  chunk_size: 1000
+  chunk_overlap: 200
+
+# Retrieval Configuration
+retrieval:
+  top_k: 4
+  search_type: "similarity"  # Options: similarity, mmr
