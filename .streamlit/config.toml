@@ -1,0 +1,23 @@
+[theme]
+primaryColor = "#8fa8ff"              # Softer blue that pops on dark backgrounds
+backgroundColor = "#0f172a"           # Deep navy-black
+secondaryBackgroundColor = "#1e293b"  # Dark slate for cards/sections
+textColor = "#e2e8f0"
+
+#primaryColor = "#667eea"
+#backgroundColor = "#ffffff"
+#secondaryBackgroundColor = "#f0f2f6"
+#textColor = "#1e3a8a"
+font = "sans serif"
+
+[server]
+maxUploadSize = 200
+enableXsrfProtection = true
+enableCORS = false
+
+[browser]
+gatherUsageStats = false
+
+[runner]
+magicEnabled = true
+fastReruns = true
