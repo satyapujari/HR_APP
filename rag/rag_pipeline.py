@@ -3,15 +3,10 @@ from typing import List, Dict, Any
 from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnablePassthrough
 
-from factories.llm_factory import LLMFactory
-from factories.embedding_factory import EmbeddingFactory
-from factories.vectorstore_factory import VectorStoreFactory
-from components.document_loader import DocumentLoader
-from components.text_splitter import TextSplitter
-from components.retriever import Retriever
-from utils.config_loader import ConfigLoader
+from factories import LLMFactory, EmbeddingFactory, VectorStoreFactory
+from components import DocumentLoader, TextSplitter, Retriever
+from utils import ConfigLoader
 
 
 class RAGPipeline:
